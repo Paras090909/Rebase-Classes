@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Paras Dewangan - Front End Engineer Portfolio">
+    <title>Paras Dewangan | Front End Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Using FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- CSS-only theme toggle using a hidden checkbox -->
+    <input type="checkbox" id="theme-toggle" class="theme-checkbox" hidden>
+    
+    <div class="page-wrapper">
+        <!-- Navigation -->
+        <nav class="navbar">
+            <div class="nav-content">
+                <div class="logo">PD.</div>
+                
+                <!-- CSS-only mobile menu toggle -->
+                <input type="checkbox" id="menu-toggle" hidden>
+                <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
+                
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <label for="theme-toggle" class="theme-label" title="Toggle Light/Dark Mode">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero" id="home">
+            <div class="hero-content">
+                <p class="greeting">Hi, my name is</p>
+                <h1 class="name">Paras Dewangan.</h1>
+                <h2 class="title">I build things for the web.</h2>
+                <p class="description">
+                    I'm a Front End Engineer and a pre-final year student bringing proficiency in problem-solving and front-end development, with knowledge of Machine Learning.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">Check out my work</a>
+                    <a href="#contact" class="btn secondary-btn">Get in touch</a>
+                </div>
+            </div>
+            <div class="hero-graphics">
+                <div class="blob"></div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! My name is Paras Dewangan. I am a pre-final year student bringing proficiency in problem-solving and front-end development. I love building responsive, user-friendly interfaces that provide a great experience.
+                    </p>
+                    <p>
+                        Alongside my web development skills, I also possess a solid knowledge of Machine Learning and core computer science fundamentals. My goal is to always build products that are scalable and performant under the hood.
+                    </p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages & Web</h3>
+                    <div class="skill-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Specializations</h3>
+                    <div class="skill-tags">
+                        <span>Front End Development</span>
+                        <span>Machine Learning</span>
+                        <span>DSA</span>
+                        <span>Version Control</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Core CS Fundamentals</h3>
+                    <div class="skill-tags">
+                        <span>DBMS</span>
+                        <span>Computer Networks (CN)</span>
+                        <span>Operating Systems (OS)</span>
+                        <span>Computer System Architecture (CSA)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Some Things I've Built</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Tic Tac Toe Game</h3>
+                        <div class="project-description">
+                            <p>An interactive Tic Tac Toe game showcasing DOM manipulation and game logic implementation. Includes features like win/draw detection and player turn tracking.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <p class="project-overline">Featured Project</p>
+                        <h3 class="project-title">Health Insurance Premium Predictor</h3>
+                        <div class="project-description">
+                            <p>A Machine Learning model built to predict health insurance premiums based on user data such as age, BMI, and smoking habits. Demonstrates proficiency in data handling and predictive modeling.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-text">
+                I'm currently looking for new opportunities. Whether you have a question, a project idea, or just want to say hi, my inbox is always open!
+            </p>
+            <a href="mailto:parasdewangan101@gmail.com" class="btn primary-btn contact-btn">Say Hello</a>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>Designed & Built by Paras Dewangan</p>
+            <div class="social-links">
+                <a href="mailto:parasdewangan101@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
