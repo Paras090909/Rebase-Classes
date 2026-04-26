@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <div class="logo-icon"></div>
+                    <span>DashUI</span>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <div class="nav-section">
+                    <p class="section-title">Menu</p>
+                    <a href="#" class="nav-item active">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Analytics</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-users"></i>
+                        <span>Customers</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span>Orders</span>
+                        <span class="badge">12</span>
+                    </a>
+                </div>
+
+                <div class="nav-section">
+                    <p class="section-title">Settings</p>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-cog"></i>
+                        <span>Preferences</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Security</span>
+                    </a>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <img src="https://i.pravatar.cc/150?img=11" alt="User Avatar">
+                    <div class="user-info">
+                        <span class="user-name">Jane Doe</span>
+                        <span class="user-role">Admin</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="top-header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for anything...">
+                </div>
+                
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-bell"></i><span class="notification-dot"></span></button>
+                    <button class="icon-btn"><i class="fas fa-envelope"></i></button>
+                    <div class="header-profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="content-wrapper">
+                <div class="page-header">
+                    <h1>Overview</h1>
+                    <button class="btn btn-primary"><i class="fas fa-download"></i> Export Report</button>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon purple"><i class="fas fa-wallet"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Revenue</p>
+                            <h3 class="stat-value">$45,231</h3>
+                            <p class="stat-change positive"><i class="fas fa-arrow-up"></i> +12.5% <span>vs last month</span></p>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon blue"><i class="fas fa-users"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Active Users</p>
+                            <h3 class="stat-value">2,405</h3>
+                            <p class="stat-change positive"><i class="fas fa-arrow-up"></i> +5.2% <span>vs last month</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon orange"><i class="fas fa-shopping-bag"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Total Sales</p>
+                            <h3 class="stat-value">1,214</h3>
+                            <p class="stat-change negative"><i class="fas fa-arrow-down"></i> -1.5% <span>vs last month</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="fas fa-chart-pie"></i></div>
+                        <div class="stat-info">
+                            <p class="stat-label">Conversion Rate</p>
+                            <h3 class="stat-value">8.4%</h3>
+                            <p class="stat-change positive"><i class="fas fa-arrow-up"></i> +2.1% <span>vs last month</span></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Layout Grid -->
+                <div class="dashboard-grid">
+                    <!-- Chart Section Mock -->
+                    <div class="card chart-card">
+                        <div class="card-header">
+                            <h3>Revenue Overview</h3>
+                            <button class="icon-btn"><i class="fas fa-ellipsis-v"></i></button>
+                        </div>
+                        <div class="mock-chart-area">
+                            <div class="mock-bars">
+                                <div class="bar-group"><div class="bar primary" style="height: 60%"></div><div class="bar secondary" style="height: 40%"></div></div>
+                                <div class="bar-group"><div class="bar primary" style="height: 80%"></div><div class="bar secondary" style="height: 50%"></div></div>
+                                <div class="bar-group"><div class="bar primary" style="height: 45%"></div><div class="bar secondary" style="height: 30%"></div></div>
+                                <div class="bar-group"><div class="bar primary" style="height: 90%"></div><div class="bar secondary" style="height: 70%"></div></div>
+                                <div class="bar-group"><div class="bar primary" style="height: 65%"></div><div class="bar secondary" style="height: 45%"></div></div>
+                                <div class="bar-group"><div class="bar primary" style="height: 100%"></div><div class="bar secondary" style="height: 85%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Activity Section -->
+                    <div class="card activity-card">
+                        <div class="card-header">
+                            <h3>Recent Activity</h3>
+                            <button class="btn btn-sm btn-outline">View All</button>
+                        </div>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <div class="avatar"><img src="https://i.pravatar.cc/150?img=33" alt="User"></div>
+                                <div class="activity-details">
+                                    <p><strong>Michael Roberts</strong> purchased <em>Pro Plan</em></p>
+                                    <span class="time">2 hours ago</span>
+                                </div>
+                                <span class="price">+$49</span>
+                            </div>
+                            <div class="activity-item">
+                                <div class="avatar"><img src="https://i.pravatar.cc/150?img=47" alt="User"></div>
+                                <div class="activity-details">
+                                    <p><strong>Sarah Jenkins</strong> upgraded to <em>Enterprise</em></p>
+                                    <span class="time">5 hours ago</span>
+                                </div>
+                                <span class="price">+$199</span>
+                            </div>
+                            <div class="activity-item">
+                                <div class="avatar bg-purple"><i class="fas fa-shield-alt"></i></div>
+                                <div class="activity-details">
+                                    <p>System security scan completed</p>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                            </div>
+                            <div class="activity-item">
+                                <div class="avatar"><img src="https://i.pravatar.cc/150?img=12" alt="User"></div>
+                                <div class="activity-details">
+                                    <p><strong>David Chen</strong> opened a support ticket</p>
+                                    <span class="time">1 day ago</span>
+                                </div>
+                                <span class="status pending">Pending</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
