@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Elevated Essentials</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <p>Free standard shipping on all orders over $150. <a href="#">Shop Now</a></p>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="mobile-menu-btn"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#" class="sale">Sale</a></li>
+                </ul>
+            </div>
+            
+            <div class="nav-center">
+                <a href="#" class="logo">AURA.</a>
+            </div>
+
+            <div class="nav-right">
+                <div class="search-icon"><i class="fas fa-search"></i></div>
+                <div class="user-icon"><i class="far fa-user"></i></div>
+                <div class="cart-icon">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-badge" id="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070&auto=format&fit=crop" alt="Summer Collection">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="hero-content">
+                <span class="subtitle">New Season</span>
+                <h1>The Summer<br>Collection</h1>
+                <p>Discover lightweight fabrics and effortless silhouettes designed for the warmer days ahead.</p>
+                <div class="hero-btns">
+                    <a href="#" class="btn btn-primary">Shop Women</a>
+                    <a href="#" class="btn btn-secondary">Shop Men</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Grid -->
+        <section class="categories section-padding">
+            <div class="container">
+                <div class="category-grid">
+                    <a href="#" class="category-card tall">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1920&auto=format&fit=crop" alt="Dresses">
+                        <div class="category-info">
+                            <h3>Dresses</h3>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1550614000-4b95d4662d55?q=80&w=2070&auto=format&fit=crop" alt="Accessories">
+                        <div class="category-info">
+                            <h3>Accessories</h3>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                    <a href="#" class="category-card">
+                        <img src="https://images.unsplash.com/photo-1489987707023-afbc2595caeb?q=80&w=2070&auto=format&fit=crop" alt="Outerwear">
+                        <div class="category-info">
+                            <h3>Outerwear</h3>
+                            <span>Shop Now</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trending Now</h2>
+                    <a href="#" class="view-all">View All</a>
+                </div>
+
+                <div class="product-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?q=80&w=1974&auto=format&fit=crop" alt="Silk Midi Skirt">
+                            <button class="add-to-cart-btn">Add to Bag</button>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title"><a href="#">Silk Midi Skirt</a></h3>
+                            <p class="product-price">$120.00</p>
+                            <div class="colors">
+                                <span class="color-swatch" style="background-color: #d1bba4;"></span>
+                                <span class="color-swatch" style="background-color: #2c2c2c;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&w=1972&auto=format&fit=crop" alt="Cotton Oversized Shirt">
+                            <button class="add-to-cart-btn">Add to Bag</button>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title"><a href="#">Cotton Oversized Shirt</a></h3>
+                            <p class="product-price">$85.00</p>
+                            <div class="colors">
+                                <span class="color-swatch" style="background-color: #ffffff; border: 1px solid #ddd;"></span>
+                                <span class="color-swatch" style="background-color: #8fa0a8;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1591561954557-26941169b49e?q=80&w=1974&auto=format&fit=crop" alt="Pleated Trousers">
+                            <div class="badge badge-new">New</div>
+                            <button class="add-to-cart-btn">Add to Bag</button>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title"><a href="#">Pleated Trousers</a></h3>
+                            <p class="product-price">$145.00</p>
+                            <div class="colors">
+                                <span class="color-swatch" style="background-color: #3b3a36;"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1584273143981-41c073dfe8f8?q=80&w=1999&auto=format&fit=crop" alt="Ribbed Knit Sweater">
+                            <button class="add-to-cart-btn">Add to Bag</button>
+                        </div>
+                        <div class="product-details">
+                            <h3 class="product-title"><a href="#">Ribbed Knit Sweater</a></h3>
+                            <p class="product-price">$95.00</p>
+                            <div class="colors">
+                                <span class="color-swatch" style="background-color: #cfc2b2;"></span>
+                                <span class="color-swatch" style="background-color: #555c65;"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brand Story Split Section -->
+        <section class="brand-story">
+            <div class="story-image">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?q=80&w=2070&auto=format&fit=crop" alt="Sustainable Materials">
+            </div>
+            <div class="story-content">
+                <h2>Consciously Crafted</h2>
+                <p>We believe in creating timeless pieces that respect both the people who make them and the planet we all share. Our new collection is crafted from 100% organic cotton and recycled materials.</p>
+                <a href="#" class="btn btn-outline">Read Our Story</a>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="newsletter section-padding">
+            <div class="container text-center">
+                <h2>Join the AURA Community</h2>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>AURA.</h2>
+                    <p>Elevated essentials for the modern minimalist.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Shop</h3>
+                    <ul>
+                        <li><a href="#">Women's</a></li>
+                        <li><a href="#">Men's</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Track Order</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 AURA. All rights reserved.</p>
+                <div class="payment-icons">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
