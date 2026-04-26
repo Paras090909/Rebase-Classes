@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing Section</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="pricing-section">
+        <div class="background-glow glow-1"></div>
+        <div class="background-glow glow-2"></div>
+        
+        <div class="container">
+            <div class="pricing-header">
+                <h2>Simple, transparent pricing</h2>
+                <p>Choose the plan that's right for your growing team. No surprise fees, ever.</p>
+                
+                <div class="billing-toggle">
+                    <span class="active">Monthly</span>
+                    <label class="switch">
+                        <input type="checkbox" id="billingToggle">
+                        <span class="slider round"></span>
+                    </label>
+                    <span>Annually <span class="discount-badge">Save 20%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-cards">
+                
+                <!-- Basic Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Starter</h3>
+                        <p>Perfect for individuals and small side projects.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="15" data-annual="12">15</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <button class="btn btn-outline">Get Started</button>
+                    <div class="features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Up to 3 projects</li>
+                            <li><i class="fas fa-check-circle"></i> Basic analytics</li>
+                            <li><i class="fas fa-check-circle"></i> 24-hour support response</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Custom domain</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Team collaboration</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pro Plan (Highlighted) -->
+                <div class="pricing-card popular">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-header">
+                        <h3>Professional</h3>
+                        <p>Ideal for growing teams needing more power.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="49" data-annual="39">49</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <button class="btn btn-primary">Start Free Trial</button>
+                    <div class="features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Unlimited projects</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced analytics dashboard</li>
+                            <li><i class="fas fa-check-circle"></i> 1-hour support response</li>
+                            <li><i class="fas fa-check-circle"></i> Custom domain included</li>
+                            <li><i class="fas fa-check-circle"></i> Up to 10 team members</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Enterprise Plan -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h3>Enterprise</h3>
+                        <p>For large scale organizations with custom needs.</p>
+                    </div>
+                    <div class="card-price">
+                        <span class="currency">$</span>
+                        <span class="amount" data-monthly="199" data-annual="159">199</span>
+                        <span class="period">/mo</span>
+                    </div>
+                    <button class="btn btn-outline">Contact Sales</button>
+                    <div class="features">
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Everything in Pro</li>
+                            <li><i class="fas fa-check-circle"></i> Custom reporting</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 dedicated phone support</li>
+                            <li><i class="fas fa-check-circle"></i> Advanced security (SSO)</li>
+                            <li><i class="fas fa-check-circle"></i> Unlimited team members</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Simple script to handle monthly/annual toggle
+        const toggle = document.getElementById('billingToggle');
+        const amounts = document.querySelectorAll('.amount');
+        const labels = document.querySelectorAll('.billing-toggle > span:not(.discount-badge)');
+
+        toggle.addEventListener('change', (e) => {
+            const isAnnual = e.target.checked;
+            
+            // Update toggle active states
+            labels[0].classList.toggle('active', !isAnnual);
+            labels[1].classList.toggle('active', isAnnual);
+
+            // Update prices with slight animation
+            amounts.forEach(amount => {
+                amount.style.opacity = '0';
+                setTimeout(() => {
+                    if (isAnnual) {
+                        amount.innerText = amount.getAttribute('data-annual');
+                    } else {
+                        amount.innerText = amount.getAttribute('data-monthly');
+                    }
+                    amount.style.opacity = '1';
+                }, 200);
+            });
+        });
+    </script>
+</body>
+</html>
